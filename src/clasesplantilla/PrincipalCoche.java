@@ -19,7 +19,7 @@ public class PrincipalCoche {
 	System.out.println(coche1.toString()); 
 
 
-	//creamos una furgoneta y pedimos datos al usuario
+	//creamos una furgoneta y pedimos datos al usuario por consola
 	Scanner scan = new Scanner(System.in);
 	int largo, ancho, peso, capacidad, plazas;
 	String color;
@@ -39,6 +39,11 @@ public class PrincipalCoche {
 	System.out.println("El color de la furgoneta es "+ furgo1.getColor());
 	System.out.println(furgo1.toString());
 	
+	//creamos otra furgoneta pero esta vez no pedimos datos por consola
+	
+	Coche furgo2 = new Furgoneta(3500, 300, 1200, "azul", 300, 8);
+	System.out.println("La segunda furgoneta es de color " + furgo2.getColor());
+	System.out.println(furgo2.toString());
 	
 }
 }

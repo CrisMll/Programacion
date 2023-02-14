@@ -25,6 +25,8 @@ public class Coche{
 	 this.peso=peso; 
 	 this.color=color; }
 	 
+	 //se crean los métodos gette y setter
+	 
 	 public int getRuedas(){
 		 return ruedas; }
 	 public void setRuedas(int ruedas) {
