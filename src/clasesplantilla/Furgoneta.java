@@ -34,7 +34,9 @@ public class Furgoneta extends Coche{
 
 	@Override
 	public String toString() {
-		return "Furgoneta [capacidad_carga=" + capacidad_carga + ", plazas_extra=" + plazas_extra + "]";
+		return super.toString() + "Esta furgoneta tiene una capacidad de carga de " + capacidad_carga + " kg  y " + plazas_extra + "plazas";
+				
+		//"Furgoneta [capacidad_carga=" + capacidad_carga + ", plazas_extra=" + plazas_extra + "]";
 	}
 	
 
