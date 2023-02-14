@@ -37,6 +37,11 @@ public class Coche extends Vehiculo{
 				+ peso + ", color=" + color + ", climatizador=" + climatizador + ", asientos_cuero=" + asientos_cuero
 				+ "]";
 	}
+
+	@Override
+	public String arrancar() {
+		return "Hola, soy un coche que hace brummmmmmmmmmmm";
+	}
 	 
 
 	 }

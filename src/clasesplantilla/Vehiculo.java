@@ -66,6 +66,7 @@ public abstract class Vehiculo {
 		this.color = color;
 	}
 	 
+	public abstract String arrancar(); //TODAS LAS CLASES QUE HEREDEN TENDRÁN QUE IMPLEMENTAR ESTE MÉTODO
 	
 
 }

@@ -40,6 +40,7 @@ public class PrincipalCoche {
 	Furgoneta furgo1 = new Furgoneta(color, plazas, plazas, ancho, largo, peso, capacidad, plazas);
 	System.out.println("El color de la furgoneta es "+ furgo1.getColor());
 	System.out.println(furgo1.toString());
+	System.out.println(furgo1.arrancar());
 	
 	//creamos otra furgoneta pero esta vez no pedimos datos por consola
 	
