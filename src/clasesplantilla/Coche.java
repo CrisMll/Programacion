@@ -10,58 +10,13 @@ public class Coche{
 	 private String color; 
 	 private boolean climatizador, asientos_cuero;
 	
-	 public Coche(int largo, int ancho, int peso, String color) { 
-	 //todos los coches que cree, tendrán 4 ruedas y motor 2000 
-	 //no tendran ni climatizador ni asientos de cuero
-		 
-	 this.ruedas = 4;
-	 this.motor = 2000;
+	 public Coche() { 
 	 this.climatizador = false;
 	 this.asientos_cuero = false;
-	 
-	 //atributos que sí pueden variar al crear un coche
-	 this.largo=largo; 
-	 this.ancho=ancho;
-	 this.peso=peso; 
-	 this.color=color; }
+	 }
 	 
 	 //se crean los métodos gette y setter
 	 
-	 public int getRuedas(){
-		 return ruedas; }
-	 public void setRuedas(int ruedas) {
-		 this.ruedas = ruedas; 
-		 } 
-	 public int getMotor(){
-		 return motor; 
-		 }
-	 public void setMotor(int motor) {
-		 this.motor = motor;
-		 } 
-	 public int getAncho() {
-		 return ancho;
-		 } 
-	 public void setAncho(int ancho) {
-		 this.ancho = ancho;
-		 }
-	 public int getLargo() {
-		 return largo;
-		 }
-	 public void setLargo(int largo) {
-		 this.largo = largo;
-		 }
-	 public int getPeso() {
-		 return peso;
-		 }
-	 public void setPeso(int peso) {
-		 this.peso = peso;
-		 } 
-	 public String getColor() {
-		 return color; 
-		 }
-	 public void setColor(String color) {
-		 this.color = color;
-		 }
 	 public boolean isClimatizador() {
 		 return climatizador;
 		 }
