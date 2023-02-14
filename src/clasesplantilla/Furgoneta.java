@@ -5,13 +5,12 @@ public class Furgoneta extends Coche{
 	private int capacidad_carga;
 	private int plazas_extra;
 	
-	
-	public Furgoneta(int largo, int ancho, int peso, String color, int capacidad, int plazas) {
-		super(largo, ancho, peso, color);
+	public Furgoneta(String color, int ruedas, int motor, int ancho, int largo, int peso, int capacidad, int plazas) {
+		super(color, ruedas, motor, ancho, largo, peso);
 		this.capacidad_carga = capacidad;
 		this.plazas_extra = plazas;
-		
 	}
+
 
 	public int getCapacidad_carga() {
 		return capacidad_carga;

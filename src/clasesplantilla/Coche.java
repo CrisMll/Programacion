@@ -1,6 +1,6 @@
 package clasesplantilla;
 
-public class Coche{
+public class Coche extends Vehiculo{
 	
 	 private int ruedas;
 	 private int motor; 
@@ -10,14 +10,15 @@ public class Coche{
 	 private String color; 
 	 private boolean climatizador, asientos_cuero;
 	
-	 public Coche() { 
-	 this.climatizador = false;
-	 this.asientos_cuero = false;
-	 }
+	 //se crean los métodos getter y setter
 	 
-	 //se crean los métodos gette y setter
+	 public Coche(String color, int ruedas, int motor, int ancho, int largo, int peso) {
+		super(color, motor,ancho,largo,peso,ruedas);
+		this.climatizador = false;
+		this.asientos_cuero = false;
+	}
 	 
-	 public boolean isClimatizador() {
+	public boolean isClimatizador() {
 		 return climatizador;
 		 }
 	 public void setClimatizador(boolean climatizador) {
@@ -29,11 +30,15 @@ public class Coche{
 	 public void setAsientos_cuero(boolean asientos_cuero) {
 		 this.asientos_cuero = asientos_cuero; 
 		 }
+
+	@Override
+	public String toString() {
+		return "Coche [ruedas=" + ruedas + ", motor=" + motor + ", ancho=" + ancho + ", largo=" + largo + ", peso="
+				+ peso + ", color=" + color + ", climatizador=" + climatizador + ", asientos_cuero=" + asientos_cuero
+				+ "]";
+	}
 	 
-	 @Override public String toString() {
-		 return "Coche [ruedas=" + ruedas + ", motor=" + motor + ", ancho=" + ancho + ", largo=" + largo + ", peso=" + peso + ", color=" + color + ", climatizador=" + climatizador + ", asientos_cuero=" + asientos_cuero + "]"; 
-		 }
-	 
+
 	 }
 	 
 	
