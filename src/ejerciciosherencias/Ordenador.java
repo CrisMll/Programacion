@@ -13,5 +13,34 @@ public class Ordenador extends EquipoInformatico{
 		this.placabase = placabase;
 	}
 
+	public int getGrafica() {
+		return grafica;
+	}
 
+	public void setGrafica(int grafica) {
+		this.grafica = grafica;
+	}
+
+	public int getVentiladores() {
+		return ventiladores;
+	}
+
+	public void setVentiladores(int ventiladores) {
+		this.ventiladores = ventiladores;
+	}
+
+	public int getPlacabase() {
+		return placabase;
+	}
+
+	public void setPlacabase(int placabase) {
+		this.placabase = placabase;
+	}
+
+	@Override
+	public String toString() {
+		return "Este ordenador tiene una grafica de " + grafica + " GB" + ventiladores + " ventiladores" + "una placa de " + placabase +" GB" + "]";
+	}
+
+	
 }
