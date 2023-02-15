@@ -42,5 +42,10 @@ public class Ordenador extends EquipoInformatico{
 		return "Este ordenador tiene una grafica de " + grafica + " GB" + ventiladores + " ventiladores" + "una placa de " + placabase +" GB" + "]";
 	}
 
+	@Override
+	public String crearPC() {
+		return "Vamos a crear un Ordenador";
+	}
+
 	
 }

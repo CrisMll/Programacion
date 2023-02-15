@@ -14,4 +14,34 @@ public class PcGaming extends Ordenador{
 		
 	}
 
+	public boolean isRefriLiquida() {
+		return RefriLiquida;
+	}
+
+	public void setRefriLiquida(boolean refriLiquida) {
+		RefriLiquida = refriLiquida;
+	}
+
+	public boolean isRGB() {
+		return RGB;
+	}
+
+	public void setRGB(boolean rGB) {
+		RGB = rGB;
+	}
+
+	public int getDiscosSSD() {
+		return discosSSD;
+	}
+
+	public void setDiscosSSD(int discosSSD) {
+		this.discosSSD = discosSSD;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "PcGaming [RefriLiquida=" + RefriLiquida + ", RGB=" + RGB + ", discosSSD=" + discosSSD + "]";
+	}
+
+	
 }

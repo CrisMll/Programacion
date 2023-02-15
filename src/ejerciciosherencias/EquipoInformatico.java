@@ -42,14 +42,9 @@ public abstract class EquipoInformatico {
 		return CapacidadDisco;
 	}
 
-	@Override
-	public String toString() {
-		return "Este equipo tiene un procesador de " + Procesador + ", una RAM de " + RAM + "GB"+ " y un espacio en disco de " + CapacidadDisco + " GB " 
-				+ "]";
+	public abstract String crearPC();
+		
 	}
 	
 	
-	
-	
-	
-}
+
