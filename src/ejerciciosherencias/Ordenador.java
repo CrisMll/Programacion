@@ -1,12 +1,14 @@
 package ejerciciosherencias;
 
+import java.util.Scanner;
+
 public class Ordenador extends EquipoInformatico{
 	
 	private int grafica;
 	private int ventiladores;
-	private int placabase;
+	private String placabase;
 
-	public Ordenador(String procesador, int RAM, int capacidadDisco, int grafica,int ventiladores, int placabase) {
+	public Ordenador(String procesador, int RAM, int capacidadDisco, int grafica,int ventiladores, String placabase) {
 		super(procesador, RAM, capacidadDisco);
 		this.grafica = grafica;
 		this.ventiladores = ventiladores;
@@ -29,14 +31,24 @@ public class Ordenador extends EquipoInformatico{
 		this.ventiladores = ventiladores;
 	}
 
-	public int getPlacabase() {
+	public String getPlacabase() {
 		return placabase;
 	}
 
-	public void setPlacabase(int placabase) {
+	public void setPlacabase(String placabase) {
 		this.placabase = placabase;
 	}
-
+	
+	public void DatosPC() {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Indica qué placa base quieres: B450, X50B o RX70");
+	placabase = scan.nextLine();
+	System.out.println("Indica los GB que tendrá tu tarjeta gráfica: 2, 4, 6, 8 o 12");
+	grafica = scan.nextInt();
+	System.out.println("Indica cuántos ventiladores extra quieres");
+	ventiladores = scan.nextInt();
+	}
+	
 	@Override
 	public String toString() {
 		return "Este ordenador tiene una grafica de " + grafica + " GB" + ventiladores + " ventiladores" + "una placa de " + placabase +" GB" + "]";
@@ -44,7 +56,7 @@ public class Ordenador extends EquipoInformatico{
 
 	@Override
 	public String crearPC() {
-		return "Vamos a crear un Ordenador";
+		return "Genial! ya tenemos el PC";
 	}
 
 	
