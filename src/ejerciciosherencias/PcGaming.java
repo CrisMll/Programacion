@@ -6,14 +6,15 @@ public class PcGaming extends Ordenador{
 	
 	private boolean RefriLiquida;
 	private boolean RGB;
-	private int discosSSD;
+	private String discosSSD;
 
-	public PcGaming(String procesador, int RAM, int capacidadDisco, int grafica, int ventiladores, String placabase, boolean refrigeracion, boolean RGB, int SSD) {
-		super(procesador, RAM, capacidadDisco, grafica, ventiladores, placabase);
-		this.discosSSD = SSD;
+
+	public PcGaming(String procesador, String RAM, String capacidadDisco, String grafica, String placa, String discos) {
+		super(procesador, RAM, capacidadDisco, grafica, placa);
+		this.discosSSD = discos;
 		this.RefriLiquida = true;
 		this.RGB = true;
-		
+
 	}
 
 	public boolean isRefriLiquida() {
@@ -32,23 +33,23 @@ public class PcGaming extends Ordenador{
 		RGB = rGB;
 	}
 
-	public int getDiscosSSD() {
+	public String getDiscosSSD() {
 		return discosSSD;
 	}
 
-	public void setDiscosSSD(int discosSSD) {
+	public void setDiscosSSD(String discosSSD) {
 		this.discosSSD = discosSSD;
 	}
 	
 	public void DatosPcGaming() {
 	Scanner scan = new Scanner(System.in);
 	System.out.println("Tu PC ya incluye Refrigeración liquida e iluminación RGB, dime cuántos discos SSD extra quieres");
-	discosSSD = scan.nextInt();
+	discosSSD = scan.nextLine();
 	}
 
 	@Override
 	public String toString() {
-		return super.toString() + "PcGaming [RefriLiquida=" + RefriLiquida + ", RGB=" + RGB + ", discosSSD=" + discosSSD + "]";
+		return super.toString() + "tu PcGaming tiene RefriLiquida" + RefriLiquida + ", RGB " + RGB + ", y " + discosSSD + "discos SSD";
 	}
 
 	

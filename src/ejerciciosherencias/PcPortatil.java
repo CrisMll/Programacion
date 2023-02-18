@@ -3,45 +3,45 @@ package ejerciciosherencias;
 import java.util.Scanner;
 
 public class PcPortatil extends Ordenador{
-	
-	private int pantalla;
-	private int CargadorRapido;
 
-	public PcPortatil(String procesador, int RAM, int capacidadDisco, int grafica, int ventiladores, String placabase, int pantalla, int cargador) {
-		super(procesador, RAM, capacidadDisco, grafica, ventiladores, placabase);
+	private String pantalla;
+	private String CargadorRapido;
+
+	public PcPortatil(String procesador, String RAM, String capacidadDisco, String pantalla, String cargador) {
+		super(procesador, RAM, capacidadDisco, pantalla, cargador);
 		this.pantalla = pantalla;
 		this.CargadorRapido = cargador;
 	
 	}
 
-	public int getPantalla() {
+	public String getPantalla() {
 		return pantalla;
 	}
 
-	public void setPantalla(int pantalla) {
+	public void setPantalla(String pantalla) {
 		this.pantalla = pantalla;
 	}
 
-	public int isCargadorRapido() {
+	public String isCargadorRapido() {
 		return CargadorRapido;
 	}
 
-	public void setCargadorRapido(int cargadorRapido) {
+	public void setCargadorRapido(String cargadorRapido) {
 		CargadorRapido = cargadorRapido;
 	}
 	
 	public void DatosPortatil() {
 	Scanner scan = new Scanner(System.in);
 	System.out.println("Indica de qué tamaño quieres la pantalla del portátil");
-	pantalla = scan.nextInt();
+	pantalla = scan.nextLine();
 	System.out.println("De cuantos V quieres el cargador 240 o 255");
-	CargadorRapido = scan.nextInt();
+	CargadorRapido = scan.nextLine();
 	
 	}
 	
 	@Override
 	public String toString() {
-		return super.toString() + "PcPortatil [pantalla=" + pantalla + ", CargadorRapido=" + CargadorRapido + "]";
+		return super.toString() + "tu PcPortatil tiene una pantalla de" + pantalla + "pulgadas y un cargador rápido de potencia " + CargadorRapido;
 	}
 
 	

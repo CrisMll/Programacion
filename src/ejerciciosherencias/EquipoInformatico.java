@@ -6,13 +6,13 @@ public abstract class EquipoInformatico {
 	
 	//atributos comunes a cualquier equipo informatico
 	private String Procesador;
-	private int RAM;
-	private int CapacidadDisco;
+	private String RAM;
+	private String CapacidadDisco;
 	
 	
 	//Creo el constructor del equipo informático con los atributos que deben tener todos 
 	
-	public EquipoInformatico(String procesador,int RAM, int capacidadDisco) {
+	public EquipoInformatico(String procesador,String RAM, String capacidadDisco) {
 		this.Procesador = procesador;
 		this.RAM = RAM;
 		this.CapacidadDisco = capacidadDisco;
@@ -28,19 +28,19 @@ public abstract class EquipoInformatico {
 		return Procesador;
 	}
 
-	public void setRAM(int ram) {
+	public void setRAM(String ram) {
 		RAM = ram;
 	}
 
-	public int getRAM() {
+	public String getRAM() {
 		return RAM;
 	}
 	
-	public void setCapacidadDisco(int capacidad) {
+	public void setCapacidadDisco(String capacidad) {
 		this.CapacidadDisco = capacidad;
 	}
 	
-	public int getCapacidadDisco() {
+	public String getCapacidadDisco() {
 		return CapacidadDisco;
 	}
 	
@@ -49,9 +49,9 @@ public abstract class EquipoInformatico {
 		System.out.println("Indica si quieres un procesador Intel o AMD");
 		this.Procesador = scan.nextLine();
 		System.out.println("Indica la RAM elegida: 4, 8 o 16");
-		this.RAM = scan.nextInt();
+		this.RAM = scan.nextLine();
 		System.out.println("Indica la capacidad de disco elegida: 256, 520, 1000 o 2000");
-		this.CapacidadDisco = scan.nextInt();
+		this.CapacidadDisco = scan.nextLine();
 	}
 
 	public abstract String crearPC();

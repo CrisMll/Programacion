@@ -13,8 +13,7 @@ public class PrincipalEqInf {
 		boolean refrigeracion = true;
 		boolean menu = true;
 		int opcion = 0;
-		String procesador="", placa="";
-		int ram =0, capacidad=0, grafica=0, ventiladores=0, pantalla = 0, cargador=0, SSD =0;
+		String ram ="", capacidad="", grafica="", ventiladores="", pantalla = "", cargador="", SSD ="", procesador="", placa="";
 		while(menu) {
 			System.out.printf("%22s\n","VAMOS A CREAR UN PC");
 			System.out.println("------------------------------ \n"+ "\nEscoge una opción: \n" + "1. Quiero un portátil \n"+"2. Quiero un PcGaming \n");
@@ -23,9 +22,9 @@ public class PrincipalEqInf {
 		
 		switch(opcion) {
 		
-		case 1:
+		case 1: //procesador,ram,capacidad,grafica,cargador,placa,ventiladores,pantalla
 		
-		PcPortatil portatil1 = new PcPortatil(procesador,ram,capacidad,grafica,cargador,placa,ventiladores,pantalla);
+		PcPortatil portatil1 = new PcPortatil(procesador,ram,capacidad,cargador,pantalla);
 		portatil1.DatosPortatil();
 		portatil1.DatosBase();
 		portatil1.DatosPC();
@@ -35,7 +34,7 @@ public class PrincipalEqInf {
 		
 		case 2:
 		
-		PcGaming gaming1 = new PcGaming(procesador,ram,capacidad,grafica,ventiladores,placa,refrigeracion,RGB,SSD);
+		PcGaming gaming1 = new PcGaming(procesador,ram,capacidad,grafica,placa,SSD);
 		gaming1.DatosPcGaming();
 		gaming1.DatosBase();
 		gaming1.DatosPC();
