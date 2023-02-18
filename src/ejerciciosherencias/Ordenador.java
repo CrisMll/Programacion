@@ -39,7 +39,7 @@ public class Ordenador extends EquipoInformatico{
 	
 	@Override
 	public String toString() {
-		return "Este ordenador tiene una grafica de " + grafica + " GB" + " una placa base modelo " + placabase +" GB" + ", y ";
+		return " Este ordenador tiene una grafica de " + grafica + " GB" + " una placa base modelo " + placabase +" GB" + ", y ";
 	}
 
 	@Override

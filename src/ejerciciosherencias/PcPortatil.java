@@ -41,7 +41,7 @@ public class PcPortatil extends Ordenador{
 	
 	@Override
 	public String toString() {
-		return super.toString() + "tu PcPortatil tiene una pantalla de" + pantalla + "pulgadas y un cargador rápido de potencia " + CargadorRapido;
+		return super.toString() + " una pantalla de " + pantalla + " pulgadas y un cargador rápido de potencia " + CargadorRapido;
 	}
 
 	
