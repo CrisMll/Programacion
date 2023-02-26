@@ -40,7 +40,7 @@ public class CasoUD5 {
 			
 			while (num<=10) {
 				System.out.println(num);
-				fw.write(num++);
+				fw.write(Integer.toString(num++));
 			}
 			
 			fw.close();
