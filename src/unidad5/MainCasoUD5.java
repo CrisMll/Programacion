@@ -4,9 +4,11 @@ public class MainCasoUD5 {
 
 	public static void main(String[] args) {
 	
-		CasoUD5 p1 = new CasoUD5();
-		p1.crearArchivos();
-
+		CasoUD5 practica = new CasoUD5();
+		practica.crearArchivos();
+		practica.escribeNumeros();
+		practica.areaTriangulo();
+		practica.leerDatos();
 	}
 
 }

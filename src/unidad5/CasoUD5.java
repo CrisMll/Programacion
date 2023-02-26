@@ -36,15 +36,15 @@ public class CasoUD5 {
 		int num=0;
 		
 		try {
-			FileWriter fw = new FileWriter("C:/users/uno.txt", true);
+			FileWriter fw = new FileWriter("C:/users/krisp/uno.txt");
 			
-			for(int i=0;i<=10;i++) {
-				fw.write(num);
+			while (num<=10) {
+				System.out.println(num);
+				fw.write(num++);
 			}
 			
 			fw.close();
 		
-			
 			
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -69,8 +69,10 @@ public class CasoUD5 {
 		area=(base*altura)/2;
 		scan.close();
 		try {
-			FileWriter fw = new FileWriter("C:/dos.txt", true);
+			FileWriter fw = new FileWriter("C:/users/krisp/dos.txt");
 			fw.write(Integer.toString(area));
+			
+			fw.close();
 			
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -91,6 +93,9 @@ public class CasoUD5 {
 				if(datos !=null)
 					System.out.println(datos);	
 			}
+			
+			br.close();
+			fr.close();
 			
 		} catch (IOException e) {
 		  e.printStackTrace();
