@@ -18,7 +18,7 @@ public class Uno {
 		int num=0;
 		
 		try {
-			FileWriter fw = new FileWriter("C:/users/krisp/EjerciciosStreams/uno.txt",true);
+			FileWriter fw = new FileWriter("C:/EjerciciosStreams/uno.txt",true);
 			
 			for (int i=0;num<11;i++) {
 				System.out.println(num);

@@ -13,7 +13,7 @@ public class Tres {
 	
 	public static void leerDatos() {
 		try {
-			FileReader fr = new FileReader("C:/Users/krisp/datos.txt");
+			FileReader fr = new FileReader("C:/EjerciciosStreams/datos.txt");
 			BufferedReader br = new BufferedReader(fr);
 			
 			String datos = "";

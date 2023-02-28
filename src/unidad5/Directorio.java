@@ -1,5 +1,6 @@
 package unidad5;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,7 +14,7 @@ public class Directorio {
 
 	public static void crearArchivos() {
 		
-		String directorio = "C:/users/krisp/EjerciciosStreams";
+		String directorio = "C:/EjerciciosStreams";
         File carpeta = new File(directorio);
 
         if (!carpeta.exists()) {
@@ -26,10 +27,22 @@ public class Directorio {
         
 		try {
 			
-			FileWriter fw1 = new FileWriter("C:/users/krisp/EjerciciosStreams/uno.txt", true);
-			FileWriter fw2 = new FileWriter("C:/users/krisp/EjerciciosStreams/dos.txt", true);
-			FileWriter fw3 = new FileWriter("C:/users/krisp/EjerciciosStreams/tres.txt", true);
+			FileWriter fw1 = new FileWriter("C:/EjerciciosStreams/uno.txt", true);
+			FileWriter fw2 = new FileWriter("C:/EjerciciosStreams/dos.txt", true);
+			FileWriter fw3 = new FileWriter("C:/EjerciciosStreams/tres.txt", true);
+			FileWriter datos = new FileWriter("C:/EjerciciosStreams/datos.txt", true);
+			BufferedWriter bwd = new BufferedWriter(datos);
 			
+			bwd.write("Nombre:María Lopez Teléfono: 955215263");
+			bwd.newLine();
+			bwd.write("Nombre:Cristina Mora Teléfono: 954566609");
+			bwd.newLine();
+			bwd.write("Nombre:Raquel Martín Teléfono: 912300989");
+			bwd.newLine();
+			bwd.write("Nombre:Francisco Perez Teléfono: 910922334");
+			
+			bwd.close();
+			datos.close();
 			fw3.close();
 			fw2.close();
 			fw1.close();

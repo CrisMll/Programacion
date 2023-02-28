@@ -30,8 +30,8 @@ public class Dos {
 		area=(base*altura)/2;
 		scan.close();
 		try {
-			FileWriter fw = new FileWriter("C:/users/krisp/EjerciciosStreams/dos.txt");
-			fw.write("El área del triángulo mide "+Double.toString(area));
+			FileWriter fw = new FileWriter("C:/EjerciciosStreams/dos.txt");
+			fw.write("El área del triángulo mide "+Double.toString(area)+" cm");
 			fw.close();
 			
 		} catch (IOException e) {
